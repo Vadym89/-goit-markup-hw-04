@@ -163,12 +163,14 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-     url(../images/background.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 1600px;
-    margin: 0 auto;
+        url(../images/background.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1600px;
+        height: 200px;
+
+        margin: 0 auto;
 
 
     }
@@ -291,6 +293,17 @@
         letter-spacing: 0.03em;
         list-style: none;
     }
+
+    .feature-icon-blok {
+        height: 120px;
+        background-color: var(--background-color);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
     
     .features-text {
         
@@ -354,6 +367,7 @@
         font-size: 16px;
         line-height: 1.19;
         color: var(--title-text-color);
+        text-align: center;
     }
     
     .team-text{ 
@@ -361,6 +375,7 @@
         line-height: 1.19;
         color: var(--primary-text-color); 
         letter-spacing: 0.03em;
+        text-align: center;
     }
 
 
