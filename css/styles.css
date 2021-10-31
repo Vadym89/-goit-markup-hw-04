@@ -362,6 +362,10 @@ title {
   margin-bottom: 0;
 }
 
+.our-team-social {
+  margin-bottom: 30px;
+}
+
 .team-text {
   font-size: 16px;
   line-height: 1.19;
@@ -471,6 +475,8 @@ margin-left: 70px;
 
 .social-list {
   display: flex;
+  justify-content: center;
+  
 }
 
 .social-item {
@@ -634,74 +640,18 @@ color: var(--hero-color);
   
 }
 
-clients-icon:hover,
-clients-icon:focus {
-  background: var(--accent-color);
-}
-
-
-.clients-list-item-link:hover .clients-icon,
-.clients-list-item-link:focus .clients-icon,
+/*  
+.social-link:hover,
+.social-link:focus,
 .social-list_grey .social-link:hover,
 .social-list_grey .social-link:focus {
 background: var(--accent-color);
 color: var(--hero-color);
 }
 
-/*  
-.clients-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-/*  
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-}
-
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42px / 36px);
-}
-
-.contacts-list {
-  display: flex;
-}
-
-.clients-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid vaar(--second-border-color);
-  border-radius: 4px;
-}
-
-.contacts-item:not(:last-child) {
-margin-right: 30px;
-}
-
-.clients-link {
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.clients-icon {
-fill: var(--second-border-color)
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-list-item-link:hover .clients-icon,
+.clients-list-item-link:focus, .clients-icon {
 fill: var(--accent-color);
+color: var(--accent-color)
 }
-*/
+ */
