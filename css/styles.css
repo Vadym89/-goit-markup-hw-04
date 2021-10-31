@@ -464,7 +464,7 @@ margin-left: 70px;
   margin-bottom: 20px;
   color: var(--hero-color);
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   font-family: Roboto, sans-serif;
 
 }
@@ -474,12 +474,12 @@ margin-left: 70px;
 }
 
 .social-item {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
-.social-item:first-child {
-  margin-left: 0;
-}
+/* .social-item:first-child { 
+  margin-right: 10px;
+}*/
 
 .social-link {
   text-decoration: none;
@@ -634,6 +634,19 @@ color: var(--hero-color);
   
 }
 
+clients-icon:hover,
+clients-icon:focus {
+  background: var(--accent-color);
+}
+
+
+.clients-list-item-link:hover .clients-icon,
+.clients-list-item-link:focus .clients-icon,
+.social-list_grey .social-link:hover,
+.social-list_grey .social-link:focus {
+background: var(--accent-color);
+color: var(--hero-color);
+}
 
 /*  
 .clients-link {
