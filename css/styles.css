@@ -411,7 +411,6 @@ margin-left: 70px;
 }
 
 .logo-footer {
-  width: 145px;
   margin-right: 0;
   margin-bottom: 20px;
   display: block;
@@ -483,9 +482,6 @@ margin-left: 70px;
   margin-left: 10px;
 }
 
-/* .social-item:first-child { 
-  margin-right: 10px;
-}*/
 
 .social-link {
   text-decoration: none;
@@ -563,8 +559,7 @@ color: var(--hero-color);
   justify-content: center;
   margin: 0;
   margin-left: -30px;
-  padding: 0;
-  list-style: none;
+  padding: 0;  list-style: none;
 }
  
  
@@ -596,7 +591,7 @@ color: var(--hero-color);
 }
 
 .portfolio-work {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   margin-top: 0;
 
   color: var(--title-text-color);
@@ -640,18 +635,9 @@ color: var(--hero-color);
   
 }
 
-/*  
-.social-link:hover,
-.social-link:focus,
-.social-list_grey .social-link:hover,
-.social-list_grey .social-link:focus {
+
+.clients-list-item-link .clients-icon:hover,
+.clients-list-item-link .clients-icon:focus {
 background: var(--accent-color);
 color: var(--hero-color);
 }
-
-.clients-list-item-link:hover .clients-icon,
-.clients-list-item-link:focus, .clients-icon {
-fill: var(--accent-color);
-color: var(--accent-color)
-}
- */
