@@ -9,7 +9,13 @@
     <link rel="preconnect"href="https://fonts.googleapis.com"/>
     <link rel="preconnect"href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;1,700;1,900&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     <link rel="stylesheet"href="./css/styles.css"/>
   </head>
   <body>
@@ -28,10 +34,19 @@
 
         <ul class="contacts-list list">
           <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contacts-link link" href="mailto:info@devstudio.com">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
           <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+            <a class="contacts-link link" href="tel:+38 096 111 11 11">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-telephone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </nav>
@@ -362,7 +377,7 @@
                 <li class="social-item">
                   <a href="#" class="social-link">
                     <i class="icon-twitter"></i>
-                    <svg class="clients-icon" width="20" height="200">
+                    <svg class="clients-icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-tvitter-1">
                       </use>
                     </svg>
@@ -371,7 +386,7 @@
                 <li class="social-item">
                   <a href="#" class="social-link">
                     <i class="icon-facebook"></i>
-                    <svg class="clients-icon" width="20" height="200">
+                    <svg class="clients-icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-facebook-1">
                       </use>
                     </svg>

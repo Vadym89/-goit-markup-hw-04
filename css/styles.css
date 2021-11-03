@@ -120,12 +120,15 @@ li {
   
 }
 
+
+
 .contacts-list .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts-list .contacts-item {
   display: block;
+  
 }
 
 .item-link {
@@ -147,6 +150,8 @@ li {
   color: var(--accent-color);
 }
 
+
+
 .contacts-link {
   display: block;
   font-weight: 500;
@@ -162,6 +167,13 @@ li {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  padding-top: 0;
+
 }
 
 /* Hero.*/
@@ -628,16 +640,28 @@ color: var(--hero-color);
   text-decoration: none;
   display: block;
   border: 1px solid var(--grey-color);
-  padding: 25px 0;
+  padding: 12px 0;
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
   
 }
 
+.clients-icon {
+  fill: var(--grey-color);
+ 
+}
 
-.clients-list-item-link .clients-icon:hover,
-.clients-list-item-link .clients-icon:focus {
+
+.clients-list-item-link:hover .clients-icon,
+.clients-list-item-link:focus .clients-icon {
+ fill: var(--accent-color);
+}
+
+ 
+
+clients-list-item-link:hover .clients-icon,
+clients-list-item-link:focus .clients-icon {
 background: var(--accent-color);
-color: var(--hero-color);
+color: var(--grey-color);
 }
