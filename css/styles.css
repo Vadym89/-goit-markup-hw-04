@@ -28,6 +28,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  
 }
 
 img {
@@ -89,6 +90,7 @@ li {
 .header-container {
   display: flex;
   align-items: center;
+
 }
 
 .page-header {
@@ -153,7 +155,7 @@ li {
 
 
 .contacts-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -161,7 +163,7 @@ li {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
-  
+  align-items: center;
 }
 
 .contacts-link:hover,
@@ -171,9 +173,11 @@ li {
 
 .contacts-icon {
   fill: currentColor;
+  margin-bottom: 0px;
   margin-right: 10px;
   padding-top: 0;
-
+  
+  
 }
 
 /* Hero.*/
@@ -383,12 +387,19 @@ title {
   line-height: 1.19;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  margin-bottom: 25px;
+ 
 }
 
 .our-team,
 .team-text {
   text-align: center;
+}
+
+/* footer */
+
+.footer-conteiner {
+  display: flex;
+  align-items: baseline;
 }
 
 
@@ -420,6 +431,7 @@ flex-wrap: wrap;
 
 .footer-inner-right {
 margin-left: 70px;
+
 }
 
 .logo-footer {
@@ -491,7 +503,11 @@ margin-left: 70px;
 }
 
 .social-item {
-  margin-left: 10px;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 
@@ -505,6 +521,15 @@ margin-left: 70px;
   align-items: center;
   justify-content: center;
   color: var(--hero-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+}
+
+.social-icon {
+  fill: #AFB1B8;
 }
 
 .social-list_grey {
@@ -531,6 +556,16 @@ color: var(--hero-color);
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+}
+
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: opx 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6), 1px 4px 6px rgb(0, 0, 0, 0.16);
 }
 
 .filter-item:not(:last-child) {
@@ -637,6 +672,8 @@ color: var(--hero-color);
 }
 
 .clients-list-item-link {
+  width: 170px;
+  height: 92px;
   text-decoration: none;
   display: block;
   border: 1px solid var(--grey-color);
@@ -659,9 +696,3 @@ color: var(--hero-color);
 }
 
  
-
-clients-list-item-link:hover .clients-icon,
-clients-list-item-link:focus .clients-icon {
-background: var(--accent-color);
-color: var(--grey-color);
-}
