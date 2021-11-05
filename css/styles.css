@@ -20,7 +20,7 @@ box-sizing: border-box;
 body {
   background-color: var(--hero-color);
   color: var(--primary-text-color);
-  font-family: Roboto, Raleway;}
+  font-family: Roboto, sans-serif;}
 
 
 .container {
@@ -136,10 +136,11 @@ li {
 .item-link {
   display: flex;
 
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -159,7 +160,7 @@ li {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--second-text-color);
+  color: var(--primary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -338,6 +339,7 @@ title {
 .team-photo {
   flex-wrap: wrap;
   width: 270px;
+  padding: 0;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.12), 0px 1px 1px rgb(0, 0, 0, 0.14),
@@ -487,13 +489,14 @@ margin-left: 70px;
 
 
 .footer-social-title {
-  margin-top: 0;
   margin-bottom: 20px;
   color: var(--hero-color);
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 14px;
-  font-family: Roboto, sans-serif;
-
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  
 }
 
 .social-list {
@@ -563,7 +566,7 @@ color: var(--hero-color);
   text-decoration: none;
 }
 
-.portfolio-link:hover,
+.portfolio-link,
 .portfolio-link:focus {
   box-shadow: opx 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6), 1px 4px 6px rgb(0, 0, 0, 0.16);
 }
@@ -619,10 +622,11 @@ color: var(--hero-color);
 
 
 .box-title {
-  padding: 20px 16px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  min-width: 322px;
+  padding: 20px 16Px;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
 }
 
 .visually-hidden {
@@ -638,7 +642,7 @@ color: var(--hero-color);
 }
 
 .portfolio-work {
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   margin-top: 0;
 
   color: var(--title-text-color);
@@ -649,8 +653,8 @@ color: var(--hero-color);
 }
 
 .portfolio-text {
-  margin-bottom: 0;
-
+  margin: 0;
+  color: var(--primary-text-color);
   font-family: Raleway, sans-seri;
   font-size: 16px;
   line-height: 1.8;
