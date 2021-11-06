@@ -561,19 +561,24 @@ color: var(--hero-color);
   justify-content: center;
 }
 
-.portfolio-link {
-  display: block;
-  text-decoration: none;
-}
-
-.portfolio-link,
-.portfolio-link:focus {
-  box-shadow: opx 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6), 1px 4px 6px rgb(0, 0, 0, 0.16);
-}
-
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgb(0, 0, 0, 0.16);
+}
+
+
 
 .filter-btn {
   border-radius: 4px;
@@ -592,7 +597,7 @@ color: var(--hero-color);
 
 .filter-btn:hover,
 .filter-btn:focus,
-.filter-btn.active {
+filter-btn.active {
   color: var(--hero-color);
   background-color: var(--accent-color);
 }
@@ -607,17 +612,22 @@ color: var(--hero-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  margin-left: -30px;
-  padding: 0;  list-style: none;
+  margin-left:0px;
+  list-style: none;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
 }
  
- 
+ .flex-element:nth-child(-n + 6) {
+   margin-bottom: 30px;
+ }
 
 .flex-element {
-  margin-bottom: 30px;
-  margin-left: 30px;
-  width: calc(100% / 3 - 30px);
+
+  margin-right: 30px;
+  width: 370px;
 }
 
 
